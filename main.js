@@ -1,38 +1,43 @@
 let menuVisible = false;
-//Función que oculta o muestra el menu
+
+// Function to show or hide the menu
 function mostrarOcultarMenu() {
+    const nav = document.getElementById("nav");
     if (menuVisible) {
-        document.getElementById("nav").classList = "";
-        menuVisible = false;
+        nav.classList.remove("responsive");
     } else {
-        document.getElementById("nav").classList = "responsive";
-        menuVisible = true;
+        nav.classList.add("responsive");
     }
+    menuVisible = !menuVisible;
 }
 
+// Function to hide the menu after selecting an option
 function seleccionar() {
-    //oculto el menu una vez que selecciono una opcion
-    document.getElementById("nav").classList = "";
+    document.getElementById("nav").classList.remove("responsive");
     menuVisible = false;
 }
-//Funcion que aplica las animaciones de las habilidades
+
+// Function to apply skill animations
 function efectoHabilidades() {
-    var skills = document.getElementById("skills");
-    var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
-    if (distancia_skills >= 300) {
-        let habilidades = document.getElementsByClassName("progreso");
+    const skills = document.getElementById("skills");
+    const distanciaSkills = window.innerHeight - skills.getBoundingClientRect().top;
+    if (distanciaSkills >= 300) {
+        const habilidades = document.getElementsByClassName("progreso");
         habilidades[0].classList.add("javascript");
         habilidades[1].classList.add("htmlcss");
-        habilidades[5].classList.add("comunicacion");
-        habilidades[6].classList.add("trabajo");
-        habilidades[7].classList.add("creatividad");
-        habilidades[8].classList.add("dedicacion");
-        habilidades[9].classList.add("proyect");
+        habilidades[2].classList.add("sql");
+        habilidades[3].classList.add("node");
+        habilidades[4].classList.add("react");
+        habilidades[5].classList.add("typescript");
+        habilidades[6].classList.add("comunication");
+        habilidades[7].classList.add("work");
+        habilidades[8].classList.add("creativity");
+        habilidades[9].classList.add("dedication");
+        habilidades[10].classList.add("proyect");
     }
 }
 
-
-//detecto el scrolling para aplicar la animacion de la barra de habilidades
-window.onscroll = function () {
+// Detect scrolling to apply the skill bar animation
+window.onscroll = function() {
     efectoHabilidades();
-} 
+};

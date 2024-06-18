@@ -1,21 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap'); /*cambiar tipografia*/
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
 
-/*escoger tipografia*/
+/* General Styles */
 * {
     box-sizing: border-box;
-    font-family: 'Work Sans', sans-serif; /* Added fallback font */
+    font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 html {
-    /* me permite deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
 }
 
 /* MENU */
 .contenedor-header {
-    background: #1e2326;   /*cambiar color*/
+    background: #1e2326;
     position: fixed;
     width: 100%;
     top: 0;
@@ -33,7 +32,7 @@ html {
 }
 
 .contenedor-header header .logo a {
-    font-family: 'Righteous', cursive; /* Added fallback font */
+    font-family: 'Righteous', cursive;
     font-size: 36px;
     color: #be1aa3;
     text-decoration: none;
@@ -48,7 +47,7 @@ html {
     color: #fff;
     margin: 0 15px;
     padding: 3px;
-    transition: color 0.5s; /* Specified transition property */
+    transition: color 0.5s;
     text-decoration: none;
 }
 
@@ -65,17 +64,17 @@ html {
     display: none;
 }
 
-/* SECCION I N I C I O */
-.inicio{
-    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
-    url(img/fondo.jpg);
+/* SECCION INICIO */
+.inicio {
+    background: linear-gradient(to top, rgba(30, 35, 38, 0.8), rgba(30, 35, 38, 1)), url(img/fondo.jpg);
     background-size: cover;
     height: 100vh;
     color: #fff;
     display: flex;
     align-items: center;
 }
-.inicio .contenido-banner{
+
+.inicio .contenido-banner {
     padding: 20px;
     background-color: #1e2326;
     max-width: 350px;
@@ -83,7 +82,8 @@ html {
     text-align: center;
     border-radius: 40px;
 }
-.inicio .contenido-banner img{
+
+.inicio .contenido-banner img {
     margin-top: 40px;
     border: 10px solid #be1aa3;
     display: block;
@@ -91,16 +91,19 @@ html {
     margin: auto;
     border-radius: 100%;
 }
-.inicio .contenido-banner h1{
+
+.inicio .contenido-banner h1 {
     margin-top: 40px;
     font-size: 42px;
-    font-family: 'Righteous';
+    font-family: 'Righteous', cursive;
 }
-.inicio .contenido-banner h2{
+
+.inicio .contenido-banner h2 {
     font-size: 15px;
     font-weight: normal;
 }
-.inicio .contenido-banner .redes a{
+
+.inicio .contenido-banner .redes a {
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -111,70 +114,86 @@ html {
     line-height: 42px;
     margin: 40px 5px;
     font-size: 20px;
-    transition: .3s;
+    transition: 0.3s;
 }
-.inicio .contenido-banner .redes a:hover{
+
+.inicio .contenido-banner .redes a:hover {
     background-color: #be1aa3;
 }
-.sobremi{
+
+/* SECCION SOBRE MI */
+.sobremi {
     background-color: #1e2326;
     color: #fff;
     padding: 50px 20px;
 }
-.sobremi .contenido-seccion{
+
+.sobremi .contenido-seccion {
     max-width: 1100px;
     margin: auto;
 }
-.sobremi h2{
+
+.sobremi h2 {
     font-size: 48px;
-    font-family: 'Righteous';
+    font-family: 'Righteous', cursive;
     text-align: center;
     padding: 20px 0;
-
 }
-.sobremi .contenido-seccion p{
-    font: 18px;
+
+.sobremi .contenido-seccion p {
+    font-size: 18px;
     line-height: 22px;
     margin-bottom: 20px;
 }
-.sobremi .contenido-seccion p span{
+
+.sobremi .contenido-seccion p span {
     color: #be1aa3;
     font-weight: bold;
 }
-.sobremi .fila{
+
+.sobremi .fila {
     display: flex;
+    flex-wrap: wrap;
 }
-.sobremi .fila .col
-{
+
+.sobremi .fila .col {
     width: 50%;
+    padding: 0 10px;
 }
-.sobremi .fila .col h3{
+
+.sobremi .fila .col h3 {
     font-size: 28px;
-    font-family: 'Righteous';
+    font-family: 'Righteous', cursive;
     margin-bottom: 25px;
 }
-.sobremi .fila .col ul{
+
+.sobremi .fila .col ul {
     list-style: none;
 }
-.sobremi .fila .col ul li{
+
+.sobremi .fila .col ul li {
     margin: 12px 0;
 }
-.sobremi .fila .col ul li strong{
+
+.sobremi .fila .col ul li strong {
     display: inline-block;
     color: #be1aa3;
     width: 130px;
 }
-.sobremi .fila .col ul li span{
+
+.sobremi .fila .col ul li span {
     background-color: #be1aa3;
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
 }
-.sobremi .fila .col .contenedor-intereses{
+
+.sobremi .fila .col .contenedor-intereses {
     display: flex;
     flex-wrap: wrap;
 }
-.sobremi .fila .col .contenedor-intereses .interes{
+
+.sobremi .fila .col .contenedor-intereses .interes {
     width: 100px;
     height: 100px;
     background-color: #252A2E;
@@ -184,15 +203,19 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: .3s;
-}.sobremi .fila .col .contenedor-intereses .interes:hover{
+    transition: 0.3s;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes:hover {
     background-color: #be1aa3;
 }
-.sobremi .fila .col .contenedor-intereses .interes i{
+
+.sobremi .fila .col .contenedor-intereses .interes i {
     font-size: 30px;
     margin-bottom: 10px;
 }
-.sobremi button{
+
+.sobremi button {
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
@@ -205,7 +228,8 @@ html {
     position: relative;
     z-index: 10;
 }
-.sobremi button .overlay{
+
+.sobremi button .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -215,6 +239,234 @@ html {
     z-index: -1;
     transition: 1s;
 }
-.sobremi button:hover .overlay{
+
+.sobremi button:hover .overlay {
     width: 100%;
+}
+
+/* SECCION SKILLS */
+.skills {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.skills .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skills h2 {
+    font-size: 48px;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.skills .fila {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills .fila .col {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.skills .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Righteous', cursive;
+    margin-bottom: 25px;
+}
+
+.skills .skill > span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.skills .skill .barra-skill {
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.skills .skill .progreso {
+    background-color: #be1aa3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+
+.skills .skill .barra-skill span {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #be1aa3;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+/* Keyframes Animations */
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes htmlcss {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 89%;
+    }
+}
+
+@keyframes sql {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes node {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 81%;
+    }
+}
+
+@keyframes react {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 55%;
+    }
+}
+
+@keyframes typescript {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 55%;
+    }
+}
+
+@keyframes comunication {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes work {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes creativity {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 99%;
+    }
+}
+
+@keyframes dedicacion {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 65%;
+    }
+}
+
+@keyframes proyect {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 94%;
+    }
+}
+
+/* Animation Classes */
+.skills .skill .javascript {
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+
+.skills .skill .htmlcss {
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+
+.skills .skill .sql {
+    width: 0%;
+    animation: 2s sql forwards;
+}
+
+.skills .skill .node {
+    width: 0%;
+    animation: 2s node forwards;
+}
+
+.skills .skill .react {
+    width: 0%;
+    animation: 2s react forwards;
+}
+
+.skills .skill .typescript {
+    width: 0%;
+    animation: 2s typescript forwards;
+}
+
+.skills .skill .comunication {
+    width: 0%;
+    animation: 2s comunication forwards;
+}
+
+.skills .skill .work {
+    width: 0%;
+    animation: 2s work forwards;
+}
+
+.skills .skill .creativity {
+    width: 0%;
+    animation: 2s creativity forwards;
+}
+
+.skills .skill .dedication {
+    width: 0%;
+    animation: 2s dedication forwards;
+    -webkit-animation: 2s dedication forwards;
+}
+
+.skills .skill .proyect {
+    width: 0%;
+    animation: 2s proyect forwards;
 }
