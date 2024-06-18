@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap'); /*cambiar tipografia*/
 
 /*escoger tipografia*/
 * {
     box-sizing: border-box;
-    font-family: 'Work Sans';
+    font-family: 'Work Sans', sans-serif; /* Added fallback font */
     margin: 0;
     padding: 0;
 }
@@ -33,10 +33,9 @@ html {
 }
 
 .contenedor-header header .logo a {
-    font-family: 'Righteous';
+    font-family: 'Righteous', cursive; /* Added fallback font */
     font-size: 36px;
     color: #be1aa3;
-    /*cambiar color*/
     text-decoration: none;
 }
 
@@ -46,25 +45,23 @@ html {
 }
 
 .contenedor-header header nav ul li a {
-    text-align: none;
     color: #fff;
     margin: 0 15px;
     padding: 3px;
-    transition: .5s;
+    transition: color 0.5s; /* Specified transition property */
     text-decoration: none;
 }
 
 .contenedor-header header nav ul li a:hover {
     color: #be1aa3;
-    /*cambiar color*/
 }
 
 .nav-responsive {
     background-color: #be1aa3;
-    /*cambiar color*/
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
     display: none;
 }
+
