@@ -25,11 +25,10 @@
                     <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
                     <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
                     <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#contact" onclick="seleccionar()">CONTACT</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive">
-                <i class="fa-solid fa-bars"></i> <!--poner el simbolo de las barritas-->
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
             </div>
         </header>
     </div>
@@ -131,10 +130,12 @@
                     </div>
                 </div>
             </div>
-            <button>
-                Download CV <i class="fa-solid fa-download"></i>
-                <span class="overlay"></span>
-            </button>
+            <a href="ruta/al/cv.pdf" download="MiCV.pdf">
+                <button onclick="descargarCV()">
+                    Download CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
         </div>
     </section>
 
