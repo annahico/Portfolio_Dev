@@ -424,21 +424,25 @@ html {
 .skills .skill .htmlcss {
     width: 0%;
     animation: 2s htmlcss forwards;
+    -webkit-animation: 2s htmlcss forwards;
 }
 
 .skills .skill .sql {
     width: 0%;
     animation: 2s sql forwards;
+    -webkit-animation: 2s sql forwards;
 }
 
 .skills .skill .node {
     width: 0%;
     animation: 2s node forwards;
+    -webkit-animation: 2s node forwards;
 }
 
 .skills .skill .react {
     width: 0%;
     animation: 2s react forwards;
+    -webkit-animation: 2s react forwards;
 }
 
 .skills .skill .typescript {
@@ -449,16 +453,19 @@ html {
 .skills .skill .comunication {
     width: 0%;
     animation: 2s comunication forwards;
+    -webkit-animation: 2s comunication forwards;
 }
 
 .skills .skill .work {
     width: 0%;
     animation: 2s work forwards;
+    -webkit-animation: 2s work forwards;
 }
 
 .skills .skill .creativity {
     width: 0%;
     animation: 2s creativity forwards;
+    -webkit-animation: 2s creativity forwards;
 }
 
 .skills .skill .dedication {
@@ -470,6 +477,13 @@ html {
 .skills .skill .proyect {
     width: 0%;
     animation: 2s proyect forwards;
+    -webkit-animation: 2s proyect forwards;
+}
+
+.skills .skill .goal {
+    width: 0%;
+    animation: 2s goal forwards;
+    -webkit-animation: 2s goal forwards;
 }
 
 /* SECCION CURRICULUM */
