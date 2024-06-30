@@ -693,7 +693,7 @@ html {
 }
 
 /* SECCION CONTACTO */
-.contacto {
+/* .contacto {
     background-image: url(img/contact.png);
     background-color: #1e2326;
     color: #fff;
@@ -789,7 +789,7 @@ html {
     color: #be1aa3;
     display: inline-block;
     margin-right: 20px;
-}
+} */
 
 footer {
     background-color: #252A2E;
