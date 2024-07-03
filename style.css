@@ -430,39 +430,46 @@ html {
 }
 
 /* Animation Classes */
-.skills .skill .javascript {
-    width: 0%;
-    animation: 2s javascript forwards;
+.skill-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.skills .skill .htmlcss {
-    width: 0%;
-    animation: 2s htmlcss forwards;
-    -webkit-animation: 2s htmlcss forwards;
+.skill {
+    flex: 1 1 calc(33.333% - 20px);
+    /* Tres columnas */
+    box-sizing: border-box;
+    text-align: center;
 }
 
-.skills .skill .sql {
-    width: 0%;
-    animation: 2s sql forwards;
-    -webkit-animation: 2s sql forwards;
+.skill .icon {
+    width: 80px;
+    /* Ajustar el tamaño del ícono según sea necesario */
+    height: 80px;
+    margin: 0 auto 10px;
 }
 
-.skills .skill .node {
-    width: 0%;
-    animation: 2s node forwards;
-    -webkit-animation: 2s node forwards;
+.skill .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
-.skills .skill .react {
-    width: 0%;
-    animation: 2s react forwards;
-    -webkit-animation: 2s react forwards;
+@media (max-width: 768px) {
+    .skill {
+        flex: 1 1 calc(50% - 20px);
+        /* Dos columnas en pantallas medianas */
+    }
 }
 
-.skills .skill .typescript {
-    width: 0%;
-    animation: 2s typescript forwards;
+@media (max-width: 480px) {
+    .skill {
+        flex: 1 1 100%;
+        /* Una columna en pantallas pequeñas */
+    }
 }
+
 
 .skills .skill .comunication {
     width: 0%;
