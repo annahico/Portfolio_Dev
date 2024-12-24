@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     let menuVisible = false;
 
     // Function to show or hide the menu
@@ -46,11 +46,15 @@ document.addEventListener("DOMContentLoaded", function() {
             habilidades[9].classList.add("dedication");
             habilidades[10].style.width = habilidades[10].dataset.percent + "%";
             habilidades[10].classList.add("proyect");
+            habilidades[11].style.width = habilidades[11].dataset.percent + "%";
+            habilidades[11].classList.add("proyect");
+            habilidades[12].style.width = habilidades[12].dataset.percent + "%";
+            habilidades[12].classList.add("proyect");
         }
     }
 
     // Detect scrolling to apply the skill bar animation
-    window.onscroll = function() {
+    window.onscroll = function () {
         efectoHabilidades();
     };
 });
