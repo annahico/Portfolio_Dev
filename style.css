@@ -379,54 +379,15 @@ html {
     }
 }
 
-@keyframes comunication {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 80%;
-    }
+/* styles.css */
+.skills-list {
+    list-style: none;
+    padding: 0;
 }
 
-@keyframes work {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 90%;
-    }
-}
-
-@keyframes creativity {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 80%;
-    }
-}
-
-@keyframes dedicacion {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 95%;
-    }
-}
-
-@keyframes proyect {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 94%;
-    }
+.skills-list li {
+    font-size: 1.2em;
+    margin: 5px 0;
 }
 
 /* Animation Classes */
