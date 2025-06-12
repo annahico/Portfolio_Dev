@@ -592,42 +592,53 @@ html {
     bottom: 4px;
 }
 
-/* Mejora visual en curriculum */
-.curriculum .contenido-seccion {
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px 20px;
-}
-
+/* SECCION CURRICULUM */
 .curriculum .fila {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
+    display: flex;
+    flex-direction: row;
+    /* Cambia de 'column' a 'row' */
+    justify-content: space-between;
+    gap: 20px;
+    /* Espacio entre columnas */
 }
 
 .curriculum .fila .col {
-    width: 100%;
-    max-width: 800px;
-    padding: 20px;
+    width: 48%;
+    /* Ajusta el ancho para evitar desbordamientos */
+    padding: 0 10px;
+    /* Reduce el padding si es necesario */
 }
 
-/* Separación entre secciones */
-.curriculum,
-.certificados {
-    margin-top: 50px;
+/* Elimina o ajusta estos estilos si causan conflicto */
+.curriculum .fila .izquierda {
+    border-right: 2px solid #252A2E;
+    padding-right: 20px;
+    /* Añade espacio al borde derecho */
 }
 
-/* Responsive mejoras */
+.curriculum .fila .derecha {
+    border-left: 2px solid #252A2E;
+    padding-left: 20px;
+    /* Añade espacio al borde izquierdo */
+}
+
+/* Ajustes responsivos para móvil */
 @media screen and (max-width: 700px) {
-    .curriculum .fila .col {
-        width: 100%;
-        padding: 10px 15px;
-        text-align: justify;
+    .curriculum .fila {
+        flex-direction: column;
+        /* En móvil vuelve a una columna */
     }
 
-    .curriculum h2,
-    .curriculum h3 {
-        text-align: center;
+    .curriculum .fila .col {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Elimina bordes laterales en móvil para mejor visualización */
+    .curriculum .fila .izquierda,
+    .curriculum .fila .derecha {
+        border: none;
+        padding: 10px;
     }
 }
 
