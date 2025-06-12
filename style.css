@@ -592,6 +592,46 @@ html {
     bottom: 4px;
 }
 
+/* Mejora visual en curriculum */
+.curriculum .contenido-seccion {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.curriculum .fila {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.curriculum .fila .col {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+/* Separación entre secciones */
+.curriculum,
+.certificados {
+    margin-top: 50px;
+}
+
+/* Responsive mejoras */
+@media screen and (max-width: 700px) {
+    .curriculum .fila .col {
+        width: 100%;
+        padding: 10px 15px;
+        text-align: justify;
+    }
+
+    .curriculum h2,
+    .curriculum h3 {
+        text-align: center;
+    }
+}
+
+
 /* SECCION PORTFOLIO */
 .portfolio {
     background-color: #252A2E;
