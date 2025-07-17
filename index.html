@@ -1,0 +1,549 @@
+<!DOCTYPE html>More actions
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Anna Hidalgo Costa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">ANNA</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home" onclick="seleccionar()">HOME</a></li>
+                    <li><a href="#aboutme" onclick="seleccionar()">ABOUT ME</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PROJECTS</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#certificates" onclick="seleccionar()">CERTIFICATES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="home" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/Anna.png" alt="">
+            </div>
+            <h1>ANNA HIDALGO COSTA</h1>
+            <h2>Full Stack Developer</h2>
+            <!-- <h2>Junior Data Analyst</h2> -->
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/annahico/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/annahico"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="aboutme" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>ABOUT ME</h2>
+            <p><span>Hi, I'm Anna Hidalgo Costa</span> a Full Stack Developer with
+                experience in web development. I have a strong foundation in front-end and back-end technologies such as
+                <strong>HTML5</strong>, <strong>CSS3</strong> and <strong>JavaScript</strong> and
+                advanced proficiency in frameworks and libraries like <strong>React</strong> and
+                <strong>Node.js</strong>. I have knowledge in
+                <strong>MySQL</strong> and <strong>MongoDB</strong> databases and backend implementation with
+                <strong>TypeScript</strong> and <strong>Python</strong>. I am
+                passionate about creating intuitive and efficient
+                user interfaces, and I possess a strong ability to solve technical problems. I am committed to
+                continuous learning and
+                improving my skills to effectively contribute to web development projects.
+            </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Profile</h3>
+                    <ul>
+                        <li>
+                            <strong>Phone</strong>
+                            +34 678567628
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            annahico@gmail.com
+                        </li>
+                        <li>
+                            <strong>GitHub</strong>
+                            <a href="https://github.com/annahico" target="_blank">https://github.com/annahico</a>
+                        </li>
+                        <li>
+                            <strong>Address</strong>
+                            Barcelona City
+                        </li>
+                        <li>
+                            <strong>Position</strong>
+                            <span>Junior</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Hobbies</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>GAMES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>CINEMA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>BOOKS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-tv"></i>
+                            <span>TV SERIES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-masks-theater"></i>
+                            <span>THEATER</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-music"></i>
+                            <span>MUSIC</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-pen-nib"></i>
+                            <span>WRITE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>TRAVEL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="CV_HidalgoCosta_Anna.pdf" download="Anna_Hidalgo_Costa.pdf">
+                <button onclick="descargarCV()">
+                    Download CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PROJECTS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/1.jpg" alt="cakes">
+                    <div class="overlay">
+                        <h3>Front-end Adopta un Valenciano</h3>
+                        <p>JS- React</p>
+                        <a href="https://adoptaunvalenciano.es/" target="_blank">Project</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/2.jpg" alt="tele">
+                    <div class="overlay">
+                        <h3>Project Stack Game</h3>
+                        <p>HTML - CSS - JS</p>
+                        <a href="https://annahico.github.io/Stack-Game/" target="_blank">Project</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/3.jpg" alt="booking">
+                    <div class="overlay">
+                        <h3>Final Project Booking Frontend</h3>
+                        <p>React - TypeScript</p>
+                        <a href="https://github.com/annahico/FINAL-PROJECT_Booking_Frontend" target="_blank">Project</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/4.jpg" alt="gamers">
+                    <div class="overlay">
+                        <h3>Gaming Website</h3>
+                        <p> HTML - CSS - JS </p>
+                        <a href="https://annahico.github.io/Gaming_Website/" target="_blank">Project</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/5.jpg" alt="frontend">
+                    <div class="overlay">
+                        <h3>Project Hackathon Talent Arena</h3>
+                        <p>React - JS </p>
+                        <a href="https://github.com/OscarBF11/Hackathon-Team15.git" target="_blank">Project</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/6.jpg" alt="compra">
+                    <div class="overlay">
+                        <h3>Project Shopping Cart</h3>
+                        <p>JS - React</p>
+                        <a href="https://annahico.github.io/PROJECT-Shopping_Cart/" target="_blank">Project</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>TECHNICAL SKILLS</h2>
+            <!-- Contenedor principal con diseño de dos columnas -->
+            <div class="fila" style="display: flex; gap: 20px;">
+                <!-- Technical Skill -->
+                <div class="col" style="flex: 1;">
+                    <!-- <h3>Technical Skills</h3> -->
+                    <div class="skill-grid"
+                        style="display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px;">
+                        <div class="skill">
+                            <span>HTML 5</span>
+                            <div class="flex flex-col items-center">
+                                <div class="icon">
+                                    <img src="img/html.png" alt="HTML">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>CSS 3</span>
+                            <div class="flex flex-col items-center">
+                                <div class="icon">
+                                    <img src="img/css-3.png" alt="CSS3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Bootstrap</span>
+                            <div class="flex flex-col items-center">
+                                <div class="icon">
+                                    <img src="img/bootstrap.png" alt="Bootstrap">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>JavaScript</span>
+                            <div class="flex flex-col items-center">
+                                <div class="icon">
+                                    <img src="img/js.png" alt="JavaScript">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>MySQL</span>
+                            <div class="flex flex-col items-center">
+                                <div class="icon">
+                                    <img src="img/mysql.png" alt="MySQL">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Node.js</span>
+                            <div class="flex flex-col items-center">
+                                <div class="icon">
+                                    <img src="img/nodejs.png" alt="Node.js">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>React</span>
+                            <div class="flex flex-col items-center">
+                                <div class="icon">
+                                    <img src="img/react.png" alt="React">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>TypeScript</span>
+                            <div class="flex flex-col items-center">
+                                <div class="icon">
+                                    <img src="img/typescript.png" alt="TypeScript">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Python</span>
+                            <div class="flex flex-col items-center">
+                                <div class="icon">
+                                    <img src="img/python.png" alt="Python">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>MongoDB</span>
+                            <div class="flex flex-col items-center">
+                                <div class="icon">
+                                    <img src="img/mongo.png" alt="MongoDB">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>AWS</span>
+                            <div class="flex flex-col items-center">
+                                <div class="icon">
+                                    <img src="img/AWS.png" alt="AWS">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SECCION CERTIFICADOS -->
+                    <section id="certificates" class="certificados">
+                        <div class="contenido-seccion">
+                            <h2>CERTIFICATES</h2>
+                            <div class="galeria-certificados">
+                                <div class="certificado">
+                                    <img src="./img/Full_Stack_Developer-1.png" alt="Certificado 1">
+                                    <div class="overlay">
+                                        <h3>Full Stack Developer</h3>
+                                        <a href="./certificados/Full_Stack_Developer.pdf"
+                                            target="_blank">Certificate</a>
+                                    </div>
+                                </div>
+                                <!-- <div class="certificado">
+                                    <img src="./img/Data_Analyst-1.png" alt="Certificado 2">
+                                    <div class="overlay">
+                                        <h3>IBM Data Analyst</h3>
+                                        <a href="https://coursera.org/share/455a6b325ad227f3405b922e1bbb0c22"
+                                            target="_blank">Certificate</a>
+                                    </div>
+                                </div> -->
+                                <div class="certificado">
+                                    <img src="./img/Front-End-1.png" alt="Certificado 3">
+                                    <div class="overlay">
+                                        <h3>IBM Front-End Developer</h3>
+                                        <a href="https://coursera.org/share/39eb630d18f51b9b51de2d96a9ccdd60"
+                                            target="_blank">Certificate</a>
+                                    </div>
+                                </div>
+                                <div class="certificado">
+                                    <img src="./img/Back-End-1.png" alt="Certificado 4">
+                                    <div class="overlay">
+                                        <h3>IBM Back-End Development</h3>
+                                        <a href="https://coursera.org/share/c9ae808fd3e2198144c4721434cbe4bf"
+                                            target="_blank">Certificate</a>
+                                    </div>
+                                </div>
+                                <div class="certificado">
+                                    <img src="./img/Web-1.png" alt="Certificado 5">
+                                    <div class="overlay">
+                                        <h3>HTML, CSS, and Javascript for Web Developers</h3>
+                                        <a href="https://coursera.org/share/dd8259d962ff8110e7c4e8f7ee87df75"
+                                            target="_blank">Certificate</a>
+                                    </div>
+                                </div>
+                                <div class="certificado">
+                                    <img src="./img/AWS-1.png" alt="Certificado 4">
+                                    <div class="overlay">
+                                        <h3>AWS Certificate Amazon</h3>
+                                        <a href="./certificados//AWS.pdf" target="_blank">Certificate</a>
+                                    </div>
+                                </div>
+                                <div class="certificado">
+                                    <img src="./img/AWS_Certificate_Amazon-1.png" alt="Certificado 5">
+                                    <div class="overlay">
+                                        <h3>AWS Certificate Amazon</h3>
+                                        <a href="./certificados/AWS_Certificate_Amazon.pdf"
+                                            target="_blank">Certificate</a>
+                                    </div>
+                                </div>
+                                <div class="certificado">
+                                    <img src="./img/Certificat_Python-1.png" alt="Certificado 5">
+                                    <div class="overlay">
+                                        <h3>Programación en Python</h3>
+                                        <a href="./certificados/Certificat_Python.pdf" target="_blank">Certificate</a>
+                                    </div>
+                                </div>
+                                <div class="certificado">
+                                    <img src="./img/AdoptaValencia.jpg" alt="Certificado 5">
+                                    <div class="overlay">
+                                        <h3>Certificado de Apreciación y Reconocimiento Adopta Valencia</h3>
+                                        <a href="./certificados/AdoptaValencia.pdf" target="_blank">Certificate</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- SECCION CURRICULUM -->
+                    <section id="curriculum" class="curriculum">
+                        <div class="contenido-seccion">
+                            <h2>CURRICULUM</h2>
+                            <div class="fila">
+                                <div class="col izquierda">
+                                    <h3>Education</h3>
+                                    <div class="item izq">
+                                        <h4>Reskilling Frontend ReactJS/Angular</h4>
+                                        <span class="casa">IT Academy</span>
+                                        <span class="fecha">2025 - In progress</span>
+                                        <p>This intensive program focuses on modern frontend development using React.js/Angular, 
+                                            covering core technologies like TypeScript, JavaScript, and responsive design. 
+                                            Students learn component architecture, state management (Redux, RxJS), API integration, and deployment. 
+                                            The course emphasizes clean code, agile workflows, and SPA development for professional web applications.</p>
+                                        <div class="conectori">
+                                            <div class="circuloi"></div>
+                                        </div>
+                                    </div>
+                                    <div class="item izq">
+                                        <h4>Higher Degree in Web Application Development</h4>
+                                        <span class="casa">FUOC</span>
+                                        <span class="fecha">2024 - In progress</span>
+                                        <p>The Higher Degree in Web Application Development (DAW) is a
+                                            technical program focused on
+                                            programming and designing web applications, covering both
+                                            front-end and back-end
+                                            development. Students learn to use programming languages like
+                                            HTML, CSS, JavaScript, and
+                                            PHP, along with popular frameworks. The curriculum includes
+                                            databases, development
+                                            environments, and version control. It also covers project
+                                            management and teamwork to create
+                                            applications adapted to various devices and client needs.</p>
+                                        <div class="conectori">
+                                            <div class="circuloi"></div>
+                                        </div>
+                                    </div>
+                                    <div class="item izq" <div class="item izq">
+                                        <h4>BootCamp Full Stack Developer (600 hours)</h4>
+                                        <span class="casa">GeeksHubs</span>
+                                        <span class="fecha">2024</span>
+                                        <p>I participated in an intensive Full Stack Developer bootcamp,
+                                            where I gained
+                                            skills in
+                                            full-stack web development, including frontend (HTML, CSS,
+                                            JavaScript, React)
+                                            and backend
+                                            (Node.js, SQL, TypeScript). I developed real projects, gaining
+                                            practical
+                                            experience and
+                                            preparation for roles in software development.</p>
+                                        <div class="conectori">
+                                            <div class="circuloi"></div>
+                                        </div>
+                                    </div>
+                                    <div class="item izq">
+                                        <h4>Master's Degree in Education and TIC</h4>
+                                        <span class="casa">UOC</span>
+                                        <span class="fecha">2022 - 2024</span>
+                                        <p>I completed a master's degree in Education and ICT, specializing
+                                            in the
+                                            integration of
+                                            digital technologies in educational environments. I developed
+                                            skills in the
+                                            design and
+                                            management of digital educational projects and in the use of ICT
+                                            tools to
+                                            improve learning.
+                                        </p>
+                                        <div class="conectori">
+                                            <div class="circuloi"></div>
+                                        </div>
+                                    </div>
+                                    <div class="item izq">
+                                        <h4>English Studies</h4>
+                                        <span class="casa">Universitat de Barcelona</span>
+                                        <span class="fecha">2016 - 2021</span>
+                                        <p>Graduated in English Studies, with solid training in Anglo-Saxon
+                                            language,
+                                            literature, and
+                                            culture. I acquired advanced skills in literary analysis,
+                                            written and oral
+                                            communication in
+                                            English, and am able to apply this knowledge in educational,
+                                            publishing, and
+                                            translation
+                                            contexts.</p>
+                                        <div class="conectori">
+                                            <div class="circuloi"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col derecha">
+                                    <h3>Experience</h3>
+                                    <div class="item der">
+                                        <h4>Web Platform for Crisis-Affected Individuals</h4>
+                                        <span class="casa">Volunteer Team in Adopta un Valenciano</span>
+                                        <span class="fecha">November 2024 - January 2025</span>
+                                        <p>Developed a volunteer-driven platform aimed at connecting
+                                            individuals with
+                                            available rooms or
+                                            apartments to those displaced by the DANA in Valencia. The
+                                            platform facilitated
+                                            temporary
+                                            housing solutions and access to essential utilities, helping
+                                            affected
+                                            individuals until
+                                            normal conditions were restored. My role focused on frontend
+                                            development,
+                                            utilizing React
+                                            and JavaScript to create a seamless and user-friendly
+                                            experience.</p>
+                                        <div class="conectord">
+                                            <div class="circulod"></div>
+                                        </div>
+                                    </div>
+                                    <div class="item der">
+                                        <h4>High School Teacher</h4>
+                                        <span class="casa">Consorci de Barcelona</span>
+                                        <span class="fecha">2023 - 2025</span>
+                                        <p>Taught English language skills (reading, writing, and speaking)
+                                            to secondary and
+                                            high school
+                                            students. Prepared and adapted educational materials, evaluated
+                                            academic
+                                            progress, and
+                                            fostered an inclusive and motivating learning environment.</p>
+                                        <div class="conectord">
+                                            <div class="circulod"></div>
+                                        </div>
+                                    </div>
+                                    <div class="item der">
+                                        <h4>Customer Service</h4>
+                                        <span class="casa">ETTs</span>
+                                        <span class="fecha">2015 - 2022</span>
+                                        <p>Provided support and solutions to customer queries, ensuring
+                                            customer
+                                            satisfaction. Managed
+                                            and resolved complaints efficiently while maintaining accurate
+                                            and up-to-date
+                                            records of
+                                            customer interactions.</p>
+                                        <div class="conectord">
+                                            <div class="circulod"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- footer -->
+                    <footer>
+                        <a href="#home" class="arriba">
+                            <i class="fa-solid fa-angles-up"></i>
+                        </a>
+                        <div class="redes">
+                            <a href="https://www.linkedin.com/in/annahico/"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://github.com/annahico"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </footer>
+                    <script src="main.js"></script>
+</body>
+
+</html>
