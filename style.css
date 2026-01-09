@@ -244,6 +244,24 @@ html {
     width: 100%;
 }
 
+li a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+li a:link,
+li a:visited,
+li a:hover,
+li a:active {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+li a:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
 /* SECCION SKILLS */
 .skills {
     background-color: #252A2E;
