@@ -16,8 +16,13 @@
     <div class="contenedor-header">
         <header>
             <div class="logo">
-                <a href="#">ANNA</a>
+                <a href="#home" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+                    <img src="img/logo_blanc.png" alt="Logo Anna Costa"
+                        style="width: 90px; height: 90px; border-radius: 70%; object-fit: cover;">
+                    <span style="color: #FF1493; font-weight: bold;">ANNA</span>
+                </a>
             </div>
+
             <nav id="nav">
                 <ul>
                     <li><a href="#home" onclick="seleccionar()">HOME</a></li>
@@ -28,6 +33,7 @@
                     <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
                 </ul>
             </nav>
+
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>

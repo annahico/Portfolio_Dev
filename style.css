@@ -34,7 +34,7 @@ html {
 .contenedor-header header .logo a {
     font-family: 'Righteous', cursive;
     font-size: 36px;
-    color: #be1aa3;
+    color: #FF1493;
     text-decoration: none;
 }
 
@@ -52,11 +52,11 @@ html {
 }
 
 .contenedor-header header nav ul li a:hover {
-    color: #be1aa3;
+    color: #FF1493;
 }
 
 .nav-responsive {
-    background-color: #be1aa3;
+    background-color: #FF1493;
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -89,7 +89,7 @@ html {
 
 .inicio .contenido-banner img {
     margin-top: 20px;
-    border: 10px solid #be1aa3;
+    border: 10px solid #FF1493;
     display: block;
     width: 80%;
     max-width: 250px;
@@ -128,7 +128,7 @@ html {
 }
 
 .inicio .contenido-banner .redes a:hover {
-    background-color: #be1aa3;
+    background-color: #FF1493;
     transform: scale(1.1);
 }
 
@@ -160,12 +160,12 @@ html {
 }
 
 .sobremi .contenido-seccion p span {
-    color: #be1aa3;
+    color: #FF1493;
     font-weight: bold;
 }
 
 .sobremi .contenido-seccion p strong {
-    color: #be1aa3;
+    color: #FF1493;
 }
 
 .sobremi .fila {
@@ -185,7 +185,7 @@ html {
     font-size: 28px;
     font-family: 'Righteous', cursive;
     margin-bottom: 25px;
-    color: #be1aa3;
+    color: #FF1493;
 }
 
 .sobremi .fila .col ul {
@@ -201,13 +201,13 @@ html {
 
 .sobremi .fila .col ul li strong {
     display: inline-block;
-    color: #be1aa3;
+    color: #FF1493;
     width: 120px;
     font-weight: 600;
 }
 
 .sobremi .fila .col ul li span {
-    background-color: #be1aa3;
+    background-color: #FF1493;
     padding: 5px 10px;
     font-weight: bold;
     border-radius: 5px;
@@ -235,7 +235,7 @@ html {
 }
 
 .sobremi .fila .col .contenedor-intereses .interes:hover {
-    background-color: #be1aa3;
+    background-color: #FF1493;
     transform: translateY(-5px);
 }
 
@@ -267,7 +267,7 @@ html {
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #be1aa3;
+    background-color: #FF1493;
     z-index: -1;
     transition: 0.5s;
 }
@@ -278,7 +278,7 @@ html {
 
 .sobremi button:hover {
     color: #fff;
-    border-color: #be1aa3;
+    border-color: #FF1493;
 }
 
 li a {
@@ -288,7 +288,7 @@ li a {
 }
 
 li a:hover {
-    color: #be1aa3;
+    color: #FF1493;
     text-decoration: underline;
 }
 
@@ -724,7 +724,7 @@ li a:hover {
     font-size: 32px;
     font-family: 'Righteous', cursive;
     margin-bottom: 30px;
-    color: #be1aa3 !important; /* Color para los subtítulos */
+    color: #FF1493 !important; /* Color para los subtítulos */
     text-align: center;
 }
 
@@ -750,7 +750,7 @@ li a:hover {
 }
 
 .curriculum .fila .item .casa {
-    color: #be1aa3 !important; /* Color especial para institución */
+    color: #FF1493 !important; /* Color especial para institución */
     font-size: 18px;
     font-weight: bold;
     display: block;
@@ -759,7 +759,7 @@ li a:hover {
 
 .curriculum .fila .item .fecha {
     display: block;
-    color: #be1aa3 !important; /* Color especial para fechas */
+    color: #FF1493 !important; /* Color especial para fechas */
     margin-bottom: 15px;
     font-style: italic;
 }
@@ -774,7 +774,7 @@ li a:hover {
 .curriculum .fila .conectori,
 .curriculum .fila .conectord {
     height: 2px;
-    background-color: #be1aa3;
+    background-color: #FF1493;
     position: absolute;
     top: 50%;
     z-index: 5;
@@ -796,7 +796,7 @@ li a:hover {
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: #be1aa3;
+    background-color: #FF1493;
     position: relative;
 }
 
@@ -812,12 +812,12 @@ li a:hover {
 
 /* Bordes laterales para los items */
 .curriculum .fila .item.izq {
-    border-right: 2px solid #be1aa3;
+    border-right: 2px solid #FF1493;
     margin-right: 20px;
 }
 
 .curriculum .fila .item.der {
-    border-left: 2px solid #be1aa3;
+    border-left: 2px solid #FF1493;
     margin-left: 20px;
 }
 
@@ -889,16 +889,16 @@ footer .redes a {
 }
 
 footer .redes a:hover {
-    background-color: #be1aa3;
+    background-color: #FF1493;
     transform: scale(1.1);
-    border-color: #be1aa3;
+    border-color: #FF1493;
 }
 
 footer .arriba {
     display: block;
     width: 60px;
     height: 60px;
-    background-color: #be1aa3;
+    background-color: #FF1493;
     color: #fff;
     position: absolute;
     left: 50%;
@@ -913,7 +913,7 @@ footer .arriba {
 
 footer .arriba:hover {
     background-color: #fff;
-    color: #be1aa3;
+    color: #FF1493;
     transform: translateX(-50%) translateY(-5px);
 }
 
