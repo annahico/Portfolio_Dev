@@ -91,8 +91,9 @@ html {
     margin-top: 20px;
     border: 10px solid #FF1493;
     display: block;
-    width: 80%;
-    max-width: 250px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
     margin: 0 auto;
     border-radius: 100%;
 }
@@ -315,7 +316,8 @@ li a:hover {
 /* GRID DE 4 COLUMNAS - ESTILO PRINCIPAL */
 .skill-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr) !important; /* FORZAR 4 COLUMNAS */
+    grid-template-columns: repeat(4, 1fr) !important;
+    /* FORZAR 4 COLUMNAS */
     gap: 25px;
     margin: 0 auto;
     width: 100%;
@@ -392,16 +394,16 @@ li a:hover {
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 20px;
     }
-    
+
     .skill {
         min-height: 150px;
         padding: 20px 15px;
     }
-    
+
     .skill span {
         font-size: 16px;
     }
-    
+
     .skill .icon {
         width: 60px;
         height: 60px;
@@ -414,17 +416,17 @@ li a:hover {
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 15px;
     }
-    
+
     .skill {
         min-height: 140px;
         padding: 15px 10px;
     }
-    
+
     .skill span {
         font-size: 14px;
         margin-bottom: 15px;
     }
-    
+
     .skill .icon {
         width: 50px;
         height: 50px;
@@ -437,7 +439,7 @@ li a:hover {
         grid-template-columns: 1fr !important;
         gap: 15px;
     }
-    
+
     .skill {
         min-height: 130px;
         padding: 15px;
@@ -447,7 +449,7 @@ li a:hover {
 /* SECCION PORTFOLIO */
 .portfolio {
     background-color: #252A2E;
-    color: #fff; 
+    color: #fff;
     padding: 80px 20px;
     text-align: center;
 }
@@ -568,6 +570,7 @@ li a:hover {
     .portfolio .galeria {
         grid-template-columns: 1fr;
     }
+
     .portfolio .proyecto {
         height: 300px;
     }
@@ -681,6 +684,7 @@ li a:hover {
     .galeria-certificados {
         grid-template-columns: 1fr;
     }
+
     .certificado {
         height: 400px;
     }
@@ -689,7 +693,8 @@ li a:hover {
 /* SECCION CURRICULUM - CORREGIDO */
 .curriculum {
     background-color: #1e2326;
-    color: #fff !important; /* Forzar color blanco */
+    color: #fff !important;
+    /* Forzar color blanco */
     padding: 80px 20px;
 }
 
@@ -704,7 +709,8 @@ li a:hover {
     text-align: center;
     padding: 20px 0;
     margin-bottom: 50px;
-    color: #fff !important; /* Forzar color blanco */
+    color: #fff !important;
+    /* Forzar color blanco */
 }
 
 .curriculum .fila {
@@ -724,7 +730,8 @@ li a:hover {
     font-size: 32px;
     font-family: 'Righteous', cursive;
     margin-bottom: 30px;
-    color: #FF1493 !important; /* Color para los subtítulos */
+    color: #FF1493 !important;
+    /* Color para los subtítulos */
     text-align: center;
 }
 
@@ -735,7 +742,8 @@ li a:hover {
     position: relative;
     border-radius: 10px;
     transition: transform 0.3s;
-    color: #fff !important; /* Color del texto */
+    color: #fff !important;
+    /* Color del texto */
 }
 
 .curriculum .fila .item:hover {
@@ -746,11 +754,13 @@ li a:hover {
 .curriculum .fila .item h4 {
     font-size: 22px;
     margin-bottom: 10px;
-    color: #fff !important; /* Títulos en blanco */
+    color: #fff !important;
+    /* Títulos en blanco */
 }
 
 .curriculum .fila .item .casa {
-    color: #FF1493 !important; /* Color especial para institución */
+    color: #FF1493 !important;
+    /* Color especial para institución */
     font-size: 18px;
     font-weight: bold;
     display: block;
@@ -759,14 +769,16 @@ li a:hover {
 
 .curriculum .fila .item .fecha {
     display: block;
-    color: #FF1493 !important; /* Color especial para fechas */
+    color: #FF1493 !important;
+    /* Color especial para fechas */
     margin-bottom: 15px;
     font-style: italic;
 }
 
 .curriculum .fila .item p {
     line-height: 1.6;
-    color: #ddd !important; /* Color gris claro para párrafos */
+    color: #ddd !important;
+    /* Color gris claro para párrafos */
     margin-top: 10px;
 }
 
@@ -826,11 +838,11 @@ li a:hover {
     .curriculum .fila {
         flex-direction: column;
     }
-    
+
     .curriculum .fila .col {
         width: 100%;
     }
-    
+
     /* En móviles, eliminar conectores */
     .curriculum .fila .conectori,
     .curriculum .fila .conectord,
@@ -838,7 +850,7 @@ li a:hover {
     .curriculum .fila .circulod {
         display: none;
     }
-    
+
     .curriculum .fila .item.izq,
     .curriculum .fila .item.der {
         border: none;
@@ -922,7 +934,7 @@ footer .arriba:hover {
     .contenedor-header header nav ul {
         display: none;
     }
-    
+
     .nav-responsive {
         display: flex;
         align-items: center;
@@ -931,7 +943,7 @@ footer .arriba:hover {
         width: 50px;
         height: 50px;
     }
-    
+
     .contenedor-header header nav.responsive {
         display: block;
         position: fixed;
@@ -944,22 +956,23 @@ footer .arriba:hover {
         z-index: 1000;
         animation: slideIn 0.3s ease;
     }
-    
+
     @keyframes slideIn {
         from {
             right: -250px;
         }
+
         to {
             right: 0;
         }
     }
-    
+
     .contenedor-header header nav.responsive ul {
         display: flex !important;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .contenedor-header header nav.responsive ul li {
         width: 100%;
         text-align: center;
@@ -967,11 +980,11 @@ footer .arriba:hover {
         padding: 10px 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
-    
+
     .contenedor-header header nav.responsive ul li:last-child {
         border-bottom: none;
     }
-    
+
     .contenedor-header header nav.responsive ul li a {
         font-size: 18px;
         padding: 10px;
@@ -982,6 +995,7 @@ footer .arriba:hover {
 
 /* Responsive general */
 @media screen and (max-width: 768px) {
+
     /* Títulos más pequeños */
     .sobremi h2,
     .skills h2,
@@ -990,7 +1004,7 @@ footer .arriba:hover {
     .curriculum h2 {
         font-size: 36px;
     }
-    
+
     /* Ajustes de padding */
     .sobremi,
     .skills,
@@ -999,27 +1013,27 @@ footer .arriba:hover {
     .curriculum {
         padding: 60px 15px;
     }
-    
+
     /* Ajuste para el contenido del banner */
     .inicio .contenido-banner {
         padding: 20px;
         max-width: 90%;
     }
-    
+
     .inicio .contenido-banner h1 {
         font-size: 36px;
     }
-    
+
     .inicio .contenido-banner h2 {
         font-size: 16px;
     }
-    
+
     /* Ajuste para textos */
     .sobremi .contenido-seccion p {
         font-size: 16px;
         text-align: left;
     }
-    
+
     /* Ajuste para las columnas en móvil */
     .sobremi .fila .col,
     .curriculum .fila .col {
@@ -1028,6 +1042,7 @@ footer .arriba:hover {
 }
 
 @media screen and (max-width: 480px) {
+
     /* Títulos aún más pequeños */
     .sobremi h2,
     .skills h2,
@@ -1036,13 +1051,13 @@ footer .arriba:hover {
     .curriculum h2 {
         font-size: 32px;
     }
-    
+
     /* Ajuste para botones */
     .sobremi button {
         padding: 12px 25px;
         font-size: 16px;
     }
-    
+
     /* Ajuste para iconos de redes sociales */
     .inicio .contenido-banner .redes a,
     footer .redes a {
@@ -1052,7 +1067,7 @@ footer .arriba:hover {
         font-size: 20px;
         margin: 5px;
     }
-    
+
     /* Ajuste para el logo */
     .contenedor-header header .logo a {
         font-size: 28px;
